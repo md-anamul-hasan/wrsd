@@ -1,0 +1,52 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- WRSD dark theme: every colour comes from the shared design tokens (same as BatteryLens and MetaForge) -->
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="DesignTokens.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <SolidColorBrush x:Key="BrushBg" Color="{StaticResource c.SurfaceBase}" />
+    <SolidColorBrush x:Key="BrushCard" Color="{StaticResource c.SurfaceRaised}" />
+    <SolidColorBrush x:Key="BrushCardHover" Color="{StaticResource c.SurfaceInteractive}" />
+    <SolidColorBrush x:Key="BrushBorder" Color="{StaticResource c.SurfaceBorder}" />
+    <SolidColorBrush x:Key="BrushText" Color="{StaticResource c.TextPrimary}" />
+    <SolidColorBrush x:Key="BrushTextMuted" Color="{StaticResource c.TextSecondary}" />
+    <SolidColorBrush x:Key="BrushPrimary" Color="{StaticResource c.AccentPrimary}" />
+    <SolidColorBrush x:Key="BrushPrimaryHover" Color="{StaticResource c.AccentPrimaryHover}" />
+    <SolidColorBrush x:Key="BrushPrimarySubtle" Color="{StaticResource c.AccentPrimaryMuted}" />
+    <SolidColorBrush x:Key="BrushOnPrimary" Color="{StaticResource c.TextInverse}" />
+    <SolidColorBrush x:Key="BrushSecondary" Color="{StaticResource c.StatusSuccess}" />
+    <SolidColorBrush x:Key="BrushAccentCyan" Color="{StaticResource c.AccentPrimary}" />
+    <SolidColorBrush x:Key="BrushDanger" Color="{StaticResource c.StatusError}" />
+    <SolidColorBrush x:Key="BrushDangerSubtle" Color="{StaticResource c.StatusErrorMuted}" />
+    <SolidColorBrush x:Key="BrushWarning" Color="{StaticResource c.StatusWarning}" />
+    <SolidColorBrush x:Key="BrushWarningSubtle" Color="{StaticResource c.StatusWarningMuted}" />
+    <SolidColorBrush x:Key="BrushViolet" Color="{StaticResource c.AccentViolet}" />
+    <SolidColorBrush x:Key="BrushVioletSubtle" Color="{StaticResource c.AccentVioletMuted}" />
+
+    <!-- UI surface and control brushes -->
+    <SolidColorBrush x:Key="BrushInputBg" Color="{StaticResource c.SurfaceSunken}" />
+    <SolidColorBrush x:Key="BrushGridLine" Color="{StaticResource c.SurfaceBorder}" />
+    <SolidColorBrush x:Key="BrushModalOverlay" Color="#B0000000" />
+    <SolidColorBrush x:Key="BrushButtonOutlineBg" Color="{StaticResource c.SurfaceRaised}" />
+    <SolidColorBrush x:Key="BrushButtonOutlineHover" Color="{StaticResource c.SurfaceInteractive}" />
+    <SolidColorBrush x:Key="BrushButtonOutlineBorder" Color="{StaticResource c.SurfaceBorder}" />
+    <SolidColorBrush x:Key="BrushButtonOutlineBorderHover" Color="{StaticResource c.SurfaceBorderStrong}" />
+    <SolidColorBrush x:Key="BrushBadgeBg" Color="{StaticResource c.SurfaceRaised}" />
+    <SolidColorBrush x:Key="BrushListItemHover" Color="{StaticResource c.SurfaceInteractive}" />
+    <SolidColorBrush x:Key="BrushListItemSelected" Color="{StaticResource c.SurfaceSelected}" />
+    <SolidColorBrush x:Key="BrushToolTipBg" Color="{StaticResource c.SurfaceInteractive}" />
+    <SolidColorBrush x:Key="BrushHeaderBg" Color="{StaticResource c.SurfaceOverlay}" />
+    <SolidColorBrush x:Key="BrushPopupBg" Color="{StaticResource c.SurfaceRaised}" />
+    <SolidColorBrush x:Key="BrushProgressTrack" Color="{StaticResource c.SurfaceInteractive}" />
+
+    <!-- Sidebar and code surfaces -->
+    <SolidColorBrush x:Key="BrushSidebarBg" Color="{StaticResource c.SurfaceOverlay}" />
+    <SolidColorBrush x:Key="BrushSidebarHover" Color="{StaticResource c.SurfaceInteractive}" />
+    <SolidColorBrush x:Key="BrushSidebarSelected" Color="{StaticResource c.SurfaceSelected}" />
+    <SolidColorBrush x:Key="BrushSidebarText" Color="{StaticResource c.TextSecondary}" />
+    <SolidColorBrush x:Key="BrushSidebarTextSelected" Color="{StaticResource c.TextPrimary}" />
+    <SolidColorBrush x:Key="BrushCodeBg" Color="{StaticResource c.SurfaceSunken}" />
+
+</ResourceDictionary>
