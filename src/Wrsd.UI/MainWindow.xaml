@@ -229,7 +229,7 @@
                         </Button>
 
                         <!-- Open source link -->
-                        <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding OpenRepositoryCommand}" Height="34" Padding="10,0" ToolTip="Open the project on GitHub">
+                        <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding OpenRepositoryCommand}" Height="34" Padding="10,0" ToolTip="Open the project on GitHub" AutomationProperties.Name="Open the project on GitHub">
                             <Grid VerticalAlignment="Center">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto" />
@@ -284,8 +284,8 @@
                     <!-- Preset Scope Selector & Workflow Controls -->
                     <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
                         <TextBlock Text="Scope:" FontSize="11" Foreground="{DynamicResource BrushTextMuted}" VerticalAlignment="Center" Margin="0,0,6,0" />
-                        <ComboBox ItemsSource="{Binding Presets}" SelectedItem="{Binding SelectedPreset}" Width="140" Height="32" Margin="0,0,8,0" ToolTip="Select snapshot scan scope" />
-                        <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding ResetCommand}" Height="32" Padding="12,0" ToolTip="Reset session (Ctrl+R)">
+                        <ComboBox ItemsSource="{Binding Presets}" SelectedItem="{Binding SelectedPreset}" Width="140" Height="32" Margin="0,0,8,0" ToolTip="Select snapshot scan scope"  AutomationProperties.Name="Select snapshot scan scope"/>
+                        <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding ResetCommand}" Height="32" Padding="12,0" ToolTip="Reset session (Ctrl+R)" AutomationProperties.Name="Reset session (Ctrl+R)">
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                                 <Path Data="{StaticResource GeomReset}" Fill="{DynamicResource BrushTextMuted}" Width="11" Height="11" Stretch="Uniform" Margin="0,0,5,0" VerticalAlignment="Center" />
                                 <TextBlock Text="Reset" Foreground="{DynamicResource BrushText}" VerticalAlignment="Center" />
@@ -322,16 +322,16 @@
 
                         <!-- Step 1: Baseline -->
                         <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
-                            <Button Style="{DynamicResource PrimaryButtonStyle}" Command="{Binding TakeBaselineCommand}" Height="32" Padding="14,0" ToolTip="Capture before snapshot (Ctrl+B)" Margin="0,0,6,0">
+                            <Button Style="{DynamicResource PrimaryButtonStyle}" Command="{Binding TakeBaselineCommand}" Height="32" Padding="14,0" ToolTip="Capture before snapshot (Ctrl+B)" Margin="0,0,6,0" AutomationProperties.Name="Capture before snapshot (Ctrl+B)">
                                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                                     <Path Data="{StaticResource GeomBaseline}" Fill="{DynamicResource BrushOnPrimary}" Width="13" Height="13" Stretch="Uniform" Margin="0,0,6,0" VerticalAlignment="Center" />
                                     <TextBlock Text="Baseline" FontWeight="SemiBold" VerticalAlignment="Center" />
                                 </StackPanel>
                             </Button>
-                            <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding LoadBaselineCommand}" Height="32" Width="32" Padding="0" ToolTip="Load baseline .wrsd file" Margin="0,0,4,0">
+                            <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding LoadBaselineCommand}" Height="32" Width="32" Padding="0" ToolTip="Load baseline .wrsd file" Margin="0,0,4,0" AutomationProperties.Name="Load baseline .wrsd file">
                                 <Path Data="{StaticResource GeomFolder}" Fill="{DynamicResource BrushTextMuted}" Width="13" Height="13" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" />
                             </Button>
-                            <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding SaveBaselineCommand}" Height="32" Width="32" Padding="0" ToolTip="Save baseline .wrsd file (Ctrl+S)" Margin="0,0,8,0">
+                            <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding SaveBaselineCommand}" Height="32" Width="32" Padding="0" ToolTip="Save baseline .wrsd file (Ctrl+S)" Margin="0,0,8,0" AutomationProperties.Name="Save baseline .wrsd file (Ctrl+S)">
                                 <Path Data="{StaticResource GeomSave}" Fill="{DynamicResource BrushTextMuted}" Width="13" Height="13" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" />
                             </Button>
                             <Border Visibility="{Binding HasBaseline, Converter={StaticResource BoolToVis}}" Background="{DynamicResource BrushPrimarySubtle}" BorderBrush="{DynamicResource BrushPrimary}" BorderThickness="1" CornerRadius="6" Height="32" Padding="8,0" Margin="0,0,8,0" VerticalAlignment="Center">
@@ -361,7 +361,7 @@
                                     <TextBlock Text="{Binding ElapsedActionTime}" FontFamily="{StaticResource MonoFont}" FontWeight="SemiBold" Foreground="{DynamicResource BrushAccentCyan}" FontSize="12" VerticalAlignment="Center" />
                                 </StackPanel>
                             </Border>
-                            <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding LaunchInstallerCommand}" Height="32" Padding="14,0" ToolTip="Launch installer (.exe, .msi) to track">
+                            <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding LaunchInstallerCommand}" Height="32" Padding="14,0" ToolTip="Launch installer (.exe, .msi) to track" AutomationProperties.Name="Launch installer (.exe, .msi) to track">
                                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                                     <Path Data="{StaticResource GeomRocket}" Fill="{DynamicResource BrushAccentCyan}" Width="13" Height="13" Stretch="Uniform" Margin="0,0,6,0" VerticalAlignment="Center" />
                                     <TextBlock Text="Launch App..." Foreground="{DynamicResource BrushText}" VerticalAlignment="Center" />
@@ -385,16 +385,16 @@
 
                         <!-- Step 3: Compare Diff -->
                         <StackPanel Grid.Column="4" Orientation="Horizontal" VerticalAlignment="Center">
-                            <Button Style="{DynamicResource PrimaryButtonStyle}" Command="{Binding TakeTargetAndDiffCommand}" Height="32" Padding="14,0" ToolTip="Capture target snapshot and diff (Ctrl+D / F5)" Margin="0,0,6,0">
+                            <Button Style="{DynamicResource PrimaryButtonStyle}" Command="{Binding TakeTargetAndDiffCommand}" Height="32" Padding="14,0" ToolTip="Capture target snapshot and diff (Ctrl+D / F5)" Margin="0,0,6,0" AutomationProperties.Name="Capture target snapshot and diff (Ctrl+D / F5)">
                                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                                     <Path Data="{StaticResource GeomCompare}" Fill="{DynamicResource BrushOnPrimary}" Width="12" Height="12" Stretch="Uniform" Margin="0,0,6,0" VerticalAlignment="Center" />
                                     <TextBlock Text="Compare Diff" FontWeight="SemiBold" VerticalAlignment="Center" />
                                 </StackPanel>
                             </Button>
-                            <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding LoadTargetAndDiffCommand}" Height="32" Width="32" Padding="0" ToolTip="Load target .wrsd file and diff" Margin="0,0,4,0">
+                            <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding LoadTargetAndDiffCommand}" Height="32" Width="32" Padding="0" ToolTip="Load target .wrsd file and diff" Margin="0,0,4,0" AutomationProperties.Name="Load target .wrsd file and diff">
                                 <Path Data="{StaticResource GeomFolder}" Fill="{DynamicResource BrushTextMuted}" Width="13" Height="13" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" />
                             </Button>
-                            <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding SaveTargetCommand}" Height="32" Width="32" Padding="0" ToolTip="Save target .wrsd file" Margin="0,0,8,0">
+                            <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding SaveTargetCommand}" Height="32" Width="32" Padding="0" ToolTip="Save target .wrsd file" Margin="0,0,8,0" AutomationProperties.Name="Save target .wrsd file">
                                 <Path Data="{StaticResource GeomSave}" Fill="{DynamicResource BrushTextMuted}" Width="13" Height="13" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" />
                             </Button>
                             <Border Visibility="{Binding HasTarget, Converter={StaticResource BoolToVis}}" Background="{DynamicResource BrushWarningSubtle}" BorderBrush="{DynamicResource BrushWarning}" BorderThickness="1" CornerRadius="6" Height="32" Padding="8,0" VerticalAlignment="Center">
@@ -419,7 +419,7 @@
                                 <TextBlock Text="{Binding TotalChanges, StringFormat='{}{0} changed'}" FontSize="11" FontWeight="SemiBold" Foreground="{DynamicResource BrushText}" VerticalAlignment="Center" />
                             </Border>
 
-                            <Button Content="All" Command="{Binding SetFilterAllCommand}" Margin="0,0,4,0" ToolTip="Show all changes">
+                            <Button Content="All" Command="{Binding SetFilterAllCommand}" Margin="0,0,4,0" ToolTip="Show all changes" AutomationProperties.Name="Show all changes">
                                 <Button.Style>
                                     <Style TargetType="Button" BasedOn="{StaticResource FilterPillStyle}">
                                         <Style.Triggers>
@@ -433,7 +433,7 @@
                                 </Button.Style>
                             </Button>
 
-                            <Button Content="{Binding AddedKeysCount, StringFormat='+{0}'}" Command="{Binding SetFilterAddedCommand}" Margin="0,0,4,0" ToolTip="Show Added only">
+                            <Button Content="{Binding AddedKeysCount, StringFormat='+{0}'}" Command="{Binding SetFilterAddedCommand}" Margin="0,0,4,0" ToolTip="Show Added only" AutomationProperties.Name="Show Added only">
                                 <Button.Style>
                                     <Style TargetType="Button" BasedOn="{StaticResource FilterPillStyle}">
                                         <Setter Property="Foreground" Value="{DynamicResource BrushPrimary}" />
@@ -447,7 +447,7 @@
                                 </Button.Style>
                             </Button>
 
-                            <Button Content="{Binding ModifiedKeysCount, StringFormat='~{0}'}" Command="{Binding SetFilterModifiedCommand}" Margin="0,0,4,0" ToolTip="Show Modified only">
+                            <Button Content="{Binding ModifiedKeysCount, StringFormat='~{0}'}" Command="{Binding SetFilterModifiedCommand}" Margin="0,0,4,0" ToolTip="Show Modified only" AutomationProperties.Name="Show Modified only">
                                 <Button.Style>
                                     <Style TargetType="Button" BasedOn="{StaticResource FilterPillStyle}">
                                         <Setter Property="Foreground" Value="{DynamicResource BrushWarning}" />
@@ -461,7 +461,7 @@
                                 </Button.Style>
                             </Button>
 
-                            <Button Content="{Binding DeletedKeysCount, StringFormat='-{0}'}" Command="{Binding SetFilterDeletedCommand}" Margin="0,0,8,0" ToolTip="Show Deleted only">
+                            <Button Content="{Binding DeletedKeysCount, StringFormat='-{0}'}" Command="{Binding SetFilterDeletedCommand}" Margin="0,0,8,0" ToolTip="Show Deleted only" AutomationProperties.Name="Show Deleted only">
                                 <Button.Style>
                                     <Style TargetType="Button" BasedOn="{StaticResource FilterPillStyle}">
                                         <Setter Property="Foreground" Value="{DynamicResource BrushDanger}" />
@@ -482,7 +482,7 @@
 
                         <!-- Search Input -->
                         <Grid Grid.Column="1" HorizontalAlignment="Left" Width="200" Height="28" Margin="0,0,12,0" VerticalAlignment="Center">
-                            <TextBox Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" Height="28" Padding="8,0,24,0" VerticalContentAlignment="Center" ToolTip="Filter keys, values, or data" />
+                            <TextBox Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" Height="28" Padding="8,0,24,0" VerticalContentAlignment="Center" ToolTip="Filter keys, values, or data"  AutomationProperties.Name="Filter keys, values, or data"/>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10,0,0,0" IsHitTestVisible="False">
                                 <StackPanel.Style>
                                     <Style TargetType="StackPanel">
@@ -514,11 +514,11 @@
 
                         <!-- Right Toggles & View Mode Switcher -->
                         <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
-                            <CheckBox Content="Hide Noise" IsChecked="{Binding HideNoise}" Margin="0,0,12,0" ToolTip="Filter out dynamic Windows background churn" />
-                            <CheckBox Content="Autoruns Only" IsChecked="{Binding PersistenceOnly}" Foreground="{DynamicResource BrushViolet}" FontWeight="SemiBold" Margin="0,0,14,0" ToolTip="Highlight persistence hooks and autoruns" />
+                            <CheckBox Content="Hide Noise" IsChecked="{Binding HideNoise}" Margin="0,0,12,0" ToolTip="Filter out dynamic Windows background churn"  AutomationProperties.Name="Filter out dynamic Windows background churn"/>
+                            <CheckBox Content="Autoruns Only" IsChecked="{Binding PersistenceOnly}" Foreground="{DynamicResource BrushViolet}" FontWeight="SemiBold" Margin="0,0,14,0" ToolTip="Highlight persistence hooks and autoruns"  AutomationProperties.Name="Highlight persistence hooks and autoruns"/>
 
                             <!-- Side-by-Side View Toggle Button -->
-                            <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding ToggleSideBySideViewCommand}" Height="28" Padding="10,0" VerticalAlignment="Center" ToolTip="Toggle Side-by-Side Value Inspector">
+                            <Button Style="{DynamicResource OutlineButtonStyle}" Command="{Binding ToggleSideBySideViewCommand}" Height="28" Padding="10,0" VerticalAlignment="Center" ToolTip="Toggle Side-by-Side Value Inspector" AutomationProperties.Name="Toggle Side-by-Side Value Inspector">
                                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                                     <Path Data="{StaticResource GeomSplit}" Fill="{DynamicResource BrushAccentCyan}" Width="12" Height="12" Stretch="Uniform" Margin="0,0,5,0" VerticalAlignment="Center" />
                                     <TextBlock Foreground="{DynamicResource BrushText}" FontSize="11" VerticalAlignment="Center">
@@ -636,13 +636,13 @@
                                         </Grid.ColumnDefinitions>
                                         <TextBlock Text="{Binding SelectedKey.KeyPath, TargetNullValue='No key selected'}" FontFamily="{StaticResource MonoFont}" FontSize="11" Foreground="{DynamicResource BrushText}" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
                                         <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
-                                            <Button Style="{DynamicResource SmallOutlineButtonStyle}" Command="{Binding CopyKeyPathCommand}" Height="26" Padding="8,0" Margin="0,0,4,0" ToolTip="Copy registry path">
+                                            <Button Style="{DynamicResource SmallOutlineButtonStyle}" Command="{Binding CopyKeyPathCommand}" Height="26" Padding="8,0" Margin="0,0,4,0" ToolTip="Copy registry path" AutomationProperties.Name="Copy registry path">
                                                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                                                     <Path Data="{StaticResource GeomCopy}" Fill="{DynamicResource BrushTextMuted}" Width="11" Height="11" Stretch="Uniform" Margin="0,0,5,0" VerticalAlignment="Center" />
                                                     <TextBlock Text="Copy" Foreground="{DynamicResource BrushText}" FontSize="11" VerticalAlignment="Center" />
                                                 </StackPanel>
                                             </Button>
-                                            <Button Style="{DynamicResource SmallOutlineButtonStyle}" Command="{Binding OpenInRegeditCommand}" Height="26" Padding="8,0" ToolTip="Open key in Regedit">
+                                            <Button Style="{DynamicResource SmallOutlineButtonStyle}" Command="{Binding OpenInRegeditCommand}" Height="26" Padding="8,0" ToolTip="Open key in Regedit" AutomationProperties.Name="Open key in Regedit">
                                                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                                                     <Path Data="{StaticResource GeomRegedit}" Fill="{DynamicResource BrushTextMuted}" Width="11" Height="11" Stretch="Uniform" Margin="0,0,5,0" VerticalAlignment="Center" />
                                                     <TextBlock Text="Regedit" Foreground="{DynamicResource BrushText}" FontSize="11" VerticalAlignment="Center" />
@@ -923,7 +923,7 @@
                         </StackPanel>
 
                         <!-- Remediation Action -->
-                        <Button Grid.Column="1" Style="{DynamicResource PrimaryButtonStyle}" Command="{Binding ExportThreatRollbackRegCommand}" Height="34" VerticalAlignment="Center" Padding="16,0" ToolTip="Export .reg script to neutralize all detected persistence hooks">
+                        <Button Grid.Column="1" Style="{DynamicResource PrimaryButtonStyle}" Command="{Binding ExportThreatRollbackRegCommand}" Height="34" VerticalAlignment="Center" Padding="16,0" ToolTip="Export .reg script to neutralize all detected persistence hooks" AutomationProperties.Name="Export .reg script to neutralize all detected persistence hooks">
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                                 <Path Data="{StaticResource GeomUndo}" Fill="{DynamicResource BrushOnPrimary}" Width="12" Height="12" Stretch="Uniform" Margin="0,0,6,0" VerticalAlignment="Center" />
                                 <TextBlock Text="Export Remediation .reg" FontWeight="Bold" VerticalAlignment="Center" />
@@ -1385,7 +1385,7 @@
                                      Background="{DynamicResource BrushProgressTrack}" BorderThickness="0" VerticalAlignment="Center" Margin="0,0,10,0" />
                         <Button Style="{DynamicResource SmallOutlineButtonStyle}" Command="{Binding CancelScanCommand}"
                                 Visibility="{Binding IsScanning, Converter={StaticResource BoolToVis}}"
-                                Height="24" Padding="8,0" VerticalAlignment="Center" ToolTip="Cancel active registry scan">
+                                Height="24" Padding="8,0" VerticalAlignment="Center" ToolTip="Cancel active registry scan" AutomationProperties.Name="Cancel active registry scan">
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                                 <Path Data="{StaticResource GeomCancel}" Fill="{DynamicResource BrushDanger}" Width="10" Height="10" Stretch="Uniform" Margin="0,0,4,0" VerticalAlignment="Center" />
                                 <TextBlock Text="Cancel" FontSize="11" Foreground="{DynamicResource BrushDanger}" VerticalAlignment="Center" />
