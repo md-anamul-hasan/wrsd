@@ -29,7 +29,7 @@
     <SolidColorBrush x:Key="BrushTextMuted" Color="{StaticResource ColorTextMuted}" />
     <SolidColorBrush x:Key="BrushPrimary" Color="{StaticResource ColorPrimary}" />
     <SolidColorBrush x:Key="BrushPrimaryHover" Color="{StaticResource ColorPrimaryHover}" />
-    <SolidColorBrush x:Key="BrushPrimarySubtle" Color="#E0EAFF" />
+    <SolidColorBrush x:Key="BrushPrimarySubtle" Color="#DBEAFE" />
     <SolidColorBrush x:Key="BrushOnPrimary" Color="#FFFFFF" />
     <SolidColorBrush x:Key="BrushSecondary" Color="{StaticResource ColorSecondary}" />
     <SolidColorBrush x:Key="BrushAccentCyan" Color="{StaticResource ColorAccentCyan}" />
@@ -38,27 +38,27 @@
     <SolidColorBrush x:Key="BrushWarning" Color="{StaticResource ColorWarning}" />
     <SolidColorBrush x:Key="BrushWarningSubtle" Color="#FEF3C7" />
     <SolidColorBrush x:Key="BrushViolet" Color="{StaticResource ColorViolet}" />
-    <SolidColorBrush x:Key="BrushVioletSubtle" Color="#EDE9FE" />
+    <SolidColorBrush x:Key="BrushVioletSubtle" Color="#CCFBF1" />
 
     <!-- UI Surface & Control Brushes -->
     <SolidColorBrush x:Key="BrushInputBg" Color="#FFFFFF" />
-    <SolidColorBrush x:Key="BrushGridLine" Color="#E5E7EB" />
+    <SolidColorBrush x:Key="BrushGridLine" Color="#E2E8F0" />
     <SolidColorBrush x:Key="BrushModalOverlay" Color="#80000000" />
     <SolidColorBrush x:Key="BrushButtonOutlineBg" Color="#FFFFFF" />
-    <SolidColorBrush x:Key="BrushButtonOutlineHover" Color="#E8EDF5" />
+    <SolidColorBrush x:Key="BrushButtonOutlineHover" Color="#E2E8F0" />
     <SolidColorBrush x:Key="BrushButtonOutlineBorder" Color="{StaticResource ColorBorder}" />
-    <SolidColorBrush x:Key="BrushButtonOutlineBorderHover" Color="#C5CEDB" />
-    <SolidColorBrush x:Key="BrushBadgeBg" Color="#F3F4F6" />
-    <SolidColorBrush x:Key="BrushListItemHover" Color="#F3F4F6" />
-    <SolidColorBrush x:Key="BrushListItemSelected" Color="#E6EEFF" />
+    <SolidColorBrush x:Key="BrushButtonOutlineBorderHover" Color="#CBD5E1" />
+    <SolidColorBrush x:Key="BrushBadgeBg" Color="#F1F5F9" />
+    <SolidColorBrush x:Key="BrushListItemHover" Color="#F1F5F9" />
+    <SolidColorBrush x:Key="BrushListItemSelected" Color="#DBEAFE" />
     <SolidColorBrush x:Key="BrushToolTipBg" Color="#FFFFFF" />
     <SolidColorBrush x:Key="BrushHeaderBg" Color="#F8FAFC" />
     <SolidColorBrush x:Key="BrushPopupBg" Color="#FFFFFF" />
-    <SolidColorBrush x:Key="BrushProgressTrack" Color="#E5E7EB" />
+    <SolidColorBrush x:Key="BrushProgressTrack" Color="#E2E8F0" />
 
     <!-- Enterprise V2 Sidebar & Surface Tokens -->
-    <SolidColorBrush x:Key="BrushSidebarBg" Color="#EDF0F6" />
-    <SolidColorBrush x:Key="BrushSidebarHover" Color="#E8EDF5" />
+    <SolidColorBrush x:Key="BrushSidebarBg" Color="#F1F5F9" />
+    <SolidColorBrush x:Key="BrushSidebarHover" Color="#E2E8F0" />
     <SolidColorBrush x:Key="BrushSidebarSelected" Color="#FFFFFF" />
     <SolidColorBrush x:Key="BrushSidebarText" Color="#64748B" />
     <SolidColorBrush x:Key="BrushSidebarTextSelected" Color="#0F172A" />
@@ -66,19 +66,19 @@
 
     <!-- Shared control tokens in the light palette: the shared Windows 11 controls (Win11Controls.xaml) read these keys -->
     <SolidColorBrush x:Key="SurfaceBase" Color="{StaticResource ColorBg}" />
-    <SolidColorBrush x:Key="SurfaceOverlay" Color="#EDF0F6" />
+    <SolidColorBrush x:Key="SurfaceOverlay" Color="#F1F5F9" />
     <SolidColorBrush x:Key="SurfaceRaised" Color="{StaticResource ColorCard}" />
     <SolidColorBrush x:Key="SurfaceSunken" Color="#FFFFFF" />
     <SolidColorBrush x:Key="SurfaceInteractive" Color="{StaticResource ColorCardHover}" />
-    <SolidColorBrush x:Key="SurfaceSelected" Color="#E6EEFF" />
+    <SolidColorBrush x:Key="SurfaceSelected" Color="#DBEAFE" />
     <SolidColorBrush x:Key="SurfaceBorder" Color="{StaticResource ColorBorder}" />
-    <SolidColorBrush x:Key="SurfaceBorderStrong" Color="#C5CEDB" />
+    <SolidColorBrush x:Key="SurfaceBorderStrong" Color="#CBD5E1" />
     <SolidColorBrush x:Key="TextPrimary" Color="{StaticResource ColorText}" />
     <SolidColorBrush x:Key="TextSecondary" Color="{StaticResource ColorTextMuted}" />
-    <SolidColorBrush x:Key="TextTertiary" Color="#8C959F" />
+    <SolidColorBrush x:Key="TextTertiary" Color="#64748B" />
     <SolidColorBrush x:Key="TextInverse" Color="#FFFFFF" />
     <SolidColorBrush x:Key="AccentPrimary" Color="{StaticResource ColorPrimary}" />
     <SolidColorBrush x:Key="AccentPrimaryHover" Color="{StaticResource ColorPrimaryHover}" />
-    <SolidColorBrush x:Key="AccentPrimaryMuted" Color="#150E7490" />
+    <SolidColorBrush x:Key="AccentPrimaryMuted" Color="#1A1D4ED8" />
 
 </ResourceDictionary>
