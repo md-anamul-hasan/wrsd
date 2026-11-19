@@ -2,7 +2,7 @@
 #define AppName "WRSD"
 #define AppFullName "WRSD - Windows Registry Snapshot Diff"
 #ifndef AppVersion
-  #define AppVersion "2.1.0"
+  #define AppVersion "2.2.0"
 #endif
 #define StageDir "..\dist\stage"
 
